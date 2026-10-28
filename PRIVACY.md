@@ -2,7 +2,7 @@
 
 **Effective:** 10/20/2026
 **Publisher:** Keith Francis
-**Contact:** keith.francis83@gmail.com
+**Contact:** v8developing@gmail.com
 
 Job Explorer is a Windows app that finds job postings, scores them against your experience, and helps you keep track of your job search. You apply to jobs yourself, on the employers' own websites. This policy explains what information the app handles, where it's kept, and when it leaves your computer.
 
@@ -61,4 +61,4 @@ If this policy changes, the new version will be posted at this address with a ne
 
 ## Contact
 
-Questions about this policy: [YOUR SUPPORT EMAIL]
+Questions about this policy: v8developing@gmail.com
