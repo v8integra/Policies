@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DocStew Privacy Policy</title>
+<meta name="description" content="How DocStew handles your information: your documents stay on your PC." />
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2328;
+    --muted: #59636e;
+    --accent: #3b5bdb;
+    --border: #d8dee4;
+    --panel: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1e1f22;
+      --text: #e3e5e8;
+      --muted: #a2a9b4;
+      --accent: #8ea2ff;
+      --border: #3a3c41;
+      --panel: #26282c;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 16px 64px;
+  }
+  h1 {
+    font-size: 30px;
+    margin: 0 0 4px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 36px 0 8px;
+  }
+  .meta {
+    color: var(--muted);
+    margin: 0 0 24px;
+  }
+  .summary {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 18px;
+  }
+  a {
+    color: var(--accent);
+  }
+  li {
+    margin: 6px 0;
+  }
+  ol > li {
+    margin: 12px 0;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>DocStew Privacy Policy</h1>
+  <p class="meta">Effective November 4, 2026 · Publisher: V8developing</p>
+
+  <p class="summary">DocStew is a document app for Windows that works on your PC. Your documents stay on your PC. DocStew has no accounts, ads, analytics or tracking, and the few times it connects to the internet are listed below.</p>
+
+  <h2>Your documents stay on your PC</h2>
+  <p>DocStew opens, edits, searches and organizes the files in the folders you choose. Everything it does with them happens on your PC:</p>
+  <ul>
+    <li>reading, editing and searching documents;</li>
+    <li>the built-in AI ("Ask My Documents", summaries, "Do it for me", the smart inbox);</li>
+    <li>text recognition (OCR) and redaction;</li>
+    <li>signatures, reminders, and making PDFs smaller.</li>
+  </ul>
+  <p>DocStew doesn't upload your documents, and V8developing never sees them. The only exception is the optional cloud AI described below, which sends text only if you turn it on.</p>
+
+  <h2>What DocStew doesn't do</h2>
+  <ul>
+    <li>No account or sign-in.</li>
+    <li>No advertising.</li>
+    <li>No analytics, usage tracking, or crash reports sent anywhere.</li>
+    <li>No selling or sharing of your information. V8developing doesn't receive it in the first place.</li>
+  </ul>
+
+  <h2>When DocStew connects to the internet</h2>
+  <p>DocStew only connects for the reasons below. Every connection is listed in the <strong>Privacy</strong> page's network log inside DocStew, and <strong>Offline mode</strong> blocks all of them except the license check.</p>
+  <ol>
+    <li><strong>Downloading AI models.</strong> When you set up DocStew's AI, or the speech model for meeting transcripts, DocStew downloads the model files from Hugging Face (huggingface.co). Nothing about you or your documents is sent. Hugging Face, like any website, receives your IP address with the request.</li>
+    <li><strong>Checking your license with the Microsoft Store.</strong> DocStew asks Windows whether you're in the free trial or have bought DocStew. When you buy, the Microsoft Store handles the purchase. DocStew never sees payment details. No document information is sent. The <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a> covers the Store.</li>
+    <li><strong>Cloud AI, only if you turn it on.</strong> In AI Settings, you can connect a cloud AI provider (Anthropic, OpenAI, Google, or a server you name) with your own API key, and choose which features use it. When a feature you've sent to a cloud provider runs, DocStew sends that provider the text it needs:
+      <ul>
+        <li>your question and the passages from your documents that answer it, for Ask My Documents;</li>
+        <li>the document's text, for summaries, writing tools, translation, data extraction, comparing documents, and naming files in the smart inbox;</li>
+        <li>the transcript, for meeting notes;</li>
+        <li>your request plus your folder names and tags, for "Do it for me".</li>
+      </ul>
+      The provider handles that text under its own privacy policy and terms. Some things always stay on your PC, even with cloud AI turned on:
+      <ul>
+        <li>documents in the vault;</li>
+        <li>the search for sensitive information before redaction;</li>
+        <li>the search index itself.</li>
+      </ul>
+    </li>
+  </ol>
+  <p>Opening a link yourself (for example "Get an API key") opens your web browser. That isn't DocStew connecting.</p>
+
+  <h2>What DocStew stores on your PC</h2>
+  <p>DocStew keeps its working data in its data folder in your Windows user profile:</p>
+  <ul>
+    <li><strong>The library:</strong> the list of documents in your folders, a search index of their text, document versions for undo, tags, reminders, and the network log. The log records which site was contacted, why, when, and how many characters were sent. It never records what the text was.</li>
+    <li><strong>Settings:</strong> your choices, such as Offline mode and AI settings.</li>
+    <li><strong>AI models</strong> you've downloaded.</li>
+    <li><strong>Saved signatures and cloud AI API keys,</strong> encrypted with your Windows account. Another account, or the files copied to another PC, can't read them.</li>
+    <li><strong>The vault,</strong> if you use it. Documents in the vault are encrypted with AES-256-GCM, with a key derived from your vault password using Argon2id. Without the password or the recovery key, they can't be read, including by V8developing.</li>
+    <li><strong>Ask My Documents conversations,</strong> so they're still there next time. You can clear them at any time. Conversations about the vault are never kept.</li>
+  </ul>
+  <p>Your documents themselves stay where you put them. DocStew creates new files (such as signed, redacted or smaller copies) next to the originals and doesn't delete your files.</p>
+
+  <h2>Removing your information</h2>
+  <ul>
+    <li>Clear Ask conversations with <strong>Clear</strong> in Ask My Documents.</li>
+    <li>Delete cloud AI keys in AI Settings, and AI models in AI Settings → Models.</li>
+    <li>Uninstalling DocStew from Windows (Settings → Apps) removes its data folder: the library index, settings, models, saved signatures, keys, reminders, and the vault. Export anything you want to keep from the vault first. Your own documents in your folders aren't touched.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>DocStew isn't directed at children under 13 and doesn't knowingly collect information from anyone.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If DocStew's handling of information changes, this policy will be updated and the effective date above changed. Significant changes will also be noted in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy: <strong>v8developing@gmail.com</strong></p>
+</main>
+</body>
+</html>
